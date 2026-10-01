@@ -1,0 +1,5 @@
+# Task 02: To-Do List Application
+# Zero external runtime dependencies. Requires Python 3.10+ standard library only.
+
+# Optional development & testing dependencies:
+pytest>=7.0.0

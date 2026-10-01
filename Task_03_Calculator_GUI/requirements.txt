@@ -1,0 +1,5 @@
+# Task 03: Calculator with GUI
+# Zero external runtime dependencies. Requires Python 3.10+ standard library with Tkinter.
+
+# Optional development & testing dependencies:
+pytest>=7.0.0

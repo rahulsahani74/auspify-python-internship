@@ -1,0 +1,297 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hello",
+        "hi",
+        "hey",
+        "good morning",
+        "good afternoon",
+        "good evening",
+        "greetings",
+        "howdy",
+        "namaste",
+        "hello there",
+        "hey assistant",
+        "hi chatbot"
+      ],
+      "responses": [
+        "Hello! I am your AI assistant. How can I help you today?",
+        "Hi there! Glad to chat with you. What would you like to explore today?",
+        "Hey! Welcome. Feel free to ask me questions, test my NLP skills, or solve calculations.",
+        "Greetings! How may I assist you today?"
+      ]
+    },
+    {
+      "tag": "farewell",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you",
+        "see you later",
+        "farewell",
+        "take care",
+        "catch you later",
+        "quit",
+        "exit",
+        "have a nice day"
+      ],
+      "responses": [
+        "Goodbye! Have a productive and wonderful day!",
+        "Take care! It was a pleasure assisting you. Feel free to return anytime.",
+        "See you later! Don't hesitate to reach back out if you have any questions.",
+        "Farewell! Keep coding and learning!"
+      ]
+    },
+    {
+      "tag": "identity",
+      "patterns": [
+        "who are you",
+        "what is your name",
+        "what can you do",
+        "tell me about yourself",
+        "what are you",
+        "introduce yourself",
+        "explain your purpose",
+        "what is your function"
+      ],
+      "responses": [
+        "I am NOVA, an intelligent AI Chatbot developed in Python for Task 06 of the Auspify Internship. I specialize in Natural Language Processing, intent classification, multi-turn conversation memory, mathematical computations, and technical guidance.",
+        "My name is NOVA (Natural Operations & Virtual Assistant). I combine OOP architecture, custom TF-IDF semantic matching, entity extraction, and conversation state management to assist you."
+      ]
+    },
+    {
+      "tag": "user_name_store",
+      "patterns": [
+        "my name is",
+        "i am called",
+        "you can call me",
+        "this is",
+        "remember my name"
+      ],
+      "responses": [
+        "Pleased to meet you, {name}! I will remember your name for our conversation.",
+        "Great to know you, {name}! I've stored your name in my active conversation memory.",
+        "Welcome, {name}! How can I help you today?"
+      ]
+    },
+    {
+      "tag": "user_name_query",
+      "patterns": [
+        "what is my name",
+        "do you remember me",
+        "do you remember my name",
+        "who am i",
+        "what did i say my name was"
+      ],
+      "responses": [
+        "Your name is {name}! I remember our introduction.",
+        "You introduced yourself as {name} earlier in our conversation."
+      ]
+    },
+    {
+      "tag": "how_are_you",
+      "patterns": [
+        "how are you",
+        "how are you doing",
+        "how is it going",
+        "are you doing well",
+        "how do you feel",
+        "how is your day"
+      ],
+      "responses": [
+        "I'm operating at peak performance, thank you for asking! How are things with you?",
+        "All systems are functioning optimally! Ready to help you with your queries.",
+        "I'm feeling energized and ready to assist! How is your day going?"
+      ]
+    },
+    {
+      "tag": "sentiment_positive",
+      "patterns": [
+        "i feel great",
+        "today is a wonderful day",
+        "i am so happy",
+        "i am excited",
+        "i did a great job",
+        "everything is awesome",
+        "i love coding",
+        "i am having a good time"
+      ],
+      "responses": [
+        "That's wonderful to hear! Positive energy makes everything more rewarding.",
+        "Awesome! Keep that enthusiasm going. Let me know if there's anything I can help you achieve today!",
+        "I'm thrilled to hear that! Your positive momentum is inspiring."
+      ]
+    },
+    {
+      "tag": "sentiment_negative",
+      "patterns": [
+        "i feel sad",
+        "i am stressed",
+        "i am frustrated",
+        "i had a bad day",
+        "nothing is working",
+        "i am tired and exhausted",
+        "this bug is driving me crazy",
+        "i feel overwhelmed"
+      ],
+      "responses": [
+        "I'm sorry to hear you're feeling that way. Take a deep breath, step away for a quick break, and remember that debugging is part of the journey!",
+        "Challenging moments happen to all developers. Break the problem into small pieces, and don't hesitate to ask me for help or explanations.",
+        "Hang in there! Every great developer encounters tough hurdles. You've got this!"
+      ]
+    },
+    {
+      "tag": "math_calc",
+      "patterns": [
+        "calculate",
+        "solve",
+        "evaluate",
+        "what is the result of",
+        "do the math",
+        "compute"
+      ],
+      "responses": [
+        "The calculated result is: {math_result}",
+        "After evaluating the expression: {math_result}"
+      ]
+    },
+    {
+      "tag": "time_query",
+      "patterns": [
+        "what time is it",
+        "current time",
+        "what is the time",
+        "tell me the time",
+        "what is today's date",
+        "what date is it",
+        "current date",
+        "which day is today"
+      ],
+      "responses": [
+        "The current local system time is {time}, and today's date is {date}.",
+        "It is currently {time} on {date}."
+      ]
+    },
+    {
+      "tag": "knowledge_python",
+      "patterns": [
+        "what is python",
+        "tell me about python",
+        "why use python",
+        "python programming language",
+        "python features",
+        "what are python decorators",
+        "what are python generators",
+        "explain list comprehensions"
+      ],
+      "responses": [
+        "Python is a high-level, interpreted programming language known for its clean syntax, rapid prototyping capabilities, and vast ecosystem. It supports multiple paradigms including Object-Oriented, Functional, and Procedural programming.",
+        "Python's strengths include dynamic typing, rich standard libraries, readable code structures (PEP 8), and dominant support across AI, Data Science, Web development, and Automation.",
+        "In Python, decorators are callables that wrap and modify function behavior, while generators produce lazy-evaluated iterators using the 'yield' statement to optimize memory consumption."
+      ]
+    },
+    {
+      "tag": "knowledge_ai",
+      "patterns": [
+        "what is artificial intelligence",
+        "what is machine learning",
+        "what is nlp",
+        "explain natural language processing",
+        "how does a chatbot work",
+        "what is deep learning",
+        "how does tf-idf work"
+      ],
+      "responses": [
+        "Natural Language Processing (NLP) is the branch of AI focused on enabling computers to understand, interpret, and generate human language using techniques like tokenization, lemmatization, semantic similarity, and intent parsing.",
+        "A chatbot works in a multi-stage pipeline: (1) Normalizing input text, (2) Extracting tokens & entities, (3) Matching user intent using semantic vectors or TF-IDF, (4) Managing conversational context state, and (5) Generating contextual responses.",
+        "TF-IDF (Term Frequency - Inverse Document Frequency) measures how important a word is to a document relative to a corpus. It weights unique keywords higher than ubiquitous stopwords to compute accurate cosine similarity matches."
+      ]
+    },
+    {
+      "tag": "knowledge_internship",
+      "patterns": [
+        "what is auspify",
+        "tell me about the internship",
+        "what are the six tasks",
+        "auspify python internship",
+        "how to do well in the internship"
+      ],
+      "responses": [
+        "The Auspify Python Internship covers 6 progressive software development tasks: (1) Text-based RPG Game, (2) CLI Todo List Manager, (3) Tkinter Calculator GUI, (4) Weather Dashboard with REST API, (5) Expense Tracker & Analyzer with SQLite, and (6) Intelligent AI Chatbot with NLP & Tkinter GUI!",
+        "Key principles for excellence in the Auspify internship include writing modular OOP code, maintaining thorough documentation (PRD, ARCHITECTURE, RULES, DESIGN, TASKS, MEMORY, README), comprehensive automated test coverage, and building polished user interfaces."
+      ]
+    },
+    {
+      "tag": "joke",
+      "patterns": [
+        "tell me a joke",
+        "make me laugh",
+        "say something funny",
+        "do you know any jokes",
+        "programming joke"
+      ],
+      "responses": [
+        "Why do programmers prefer dark mode? Because light attracts bugs! 🐛",
+        "There are 10 types of people in the world: those who understand binary, and those who don't.",
+        "A SQL query walks into a bar, walks up to two tables and asks: 'Can I join you?' 🍺",
+        "Why was the JavaScript developer sad? Because they didn't know how to 'null' their feelings! 😄",
+        "An algorithm is what programmers use when they don't want to explain what they did."
+      ]
+    },
+    {
+      "tag": "motivation",
+      "patterns": [
+        "motivate me",
+        "i need motivation",
+        "give me an inspiring quote",
+        "inspire me",
+        "words of encouragement"
+      ],
+      "responses": [
+        "\"The only way to do great work is to love what you do.\" — Steve Jobs. Keep building, you're making steady progress!",
+        "\"First, solve the problem. Then, write the code.\" — John Johnson. Take pride in each line of craftsmanship!",
+        "\"Experience is the name everyone gives to their mistakes.\" — Oscar Wilde. Every exception and bug is a step toward mastery."
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "help",
+        "what can you do",
+        "instructions",
+        "how to use you",
+        "commands",
+        "list features",
+        "what can i ask"
+      ],
+      "responses": [
+        "Here are things you can ask me:\n• Tell me your name (e.g. 'My name is Rahul')\n• Ask technical questions ('What is Python?', 'Explain NLP', 'How does TF-IDF work?')\n• Perform math calculations (e.g. 'calculate 25 * 14 + 100')\n• Ask for date/time ('What time is it?')\n• Share your mood ('I feel great!' or 'I feel stressed')\n• Ask for jokes or motivation ('Tell me a joke', 'Motivate me')\n• Learn about the Auspify internship tasks\n• Type 'clear' to reset conversation history."
+      ]
+    },
+    {
+      "tag": "clear_memory",
+      "patterns": [
+        "clear memory",
+        "reset conversation",
+        "forget my name",
+        "start over",
+        "wipe memory"
+      ],
+      "responses": [
+        "I have cleared our conversation history and active state memory. A fresh slate! How can I assist you now?",
+        "Conversation memory reset successfully. What would you like to talk about today?"
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "I'm not completely certain I understood that query. Could you please rephrase, or ask about Python, NLP concepts, math calculations ('calculate 15 * 8'), or type 'help'?",
+        "That's an interesting question! I don't have a direct answer in my local knowledge base yet. Try asking about programming, math calculations, system time, or type 'help' for guidance.",
+        "I couldn't quite extract the intent for that message. Feel free to rephrase or try one of the topic suggestions like 'What is NLP?' or 'Tell me a joke'."
+      ]
+    }
+  ]
+}
